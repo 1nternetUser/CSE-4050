@@ -1,0 +1,56 @@
+
+body { background-color: #444444; }
+h1 { text-align: center; color: #bebebe; }
+hr { color:	#bebebe; }
+i { color: #2069e0; }
+p { margin : 1em; }
+figure { 
+		display: block;
+		background-color: #878683;
+		margin: 1em; 
+		padding: 1em; 
+		p.solid {border-style: solid;}
+		border style: 1em thin solid; 
+		border-color: #000000; black; 
+						}
+th	{	text-align: center;	}
+table	{ text-align: left; }
+	
+	
+									}
+table td       {	border: inset 5px #000;
+			margin: 10px; 
+			padding: 10px;
+									}
+table tr#ROW1  {	background-color:#778899; lightslategray;
+			margin: 10px; 
+			padding: 10px;				
+									}
+
+/*
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #8B0000; darkred; #778899; lightslategray; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #2F4F4F; darkslategray; 
+}
+*/
+
+}
+
+div {
+	display: block;
+	background-color: #000000; black; #778899; lightslategray;
+	margin: 10px; 
+	padding: 10px; 
+	p.solid { border-style: solid; }
+	border-style: solid; 
+	border-color: #000000; black;
+	text-align: left;
+							}
+/*"https://www.rapidtables.com/web/css/css-color.html"*/
+/*https://fonts.google.com/*/
