@@ -4,7 +4,7 @@ body { background-color: #2F4F4F; darkslategray; }
 h1 { text-align: center; color: #778899; lightslategray; }
 hr { color:	#C0C0C0; silver; }
 i { color: #4682B4; steelblue; }
-p { margin : 1em; }
+p { margin : 1em; color: #778899; lightslategray;}
 figure { 
 		display: block;
 		background-color: #878683;
