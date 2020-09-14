@@ -1,8 +1,9 @@
 
-body { background-color: #444444; }
-h1 { text-align: center; color: #bebebe; }
-hr { color:	#bebebe; }
-i { color: #2069e0; }
+
+body { background-color: #2F4F4F; darkslategray; }
+h1 { text-align: center; color: #778899; lightslategray; }
+hr { color:	#C0C0C0; silver; }
+i { color: #4682B4; steelblue; }
 p { margin : 1em; }
 figure { 
 		display: block;
