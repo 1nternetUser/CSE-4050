@@ -1,6 +1,7 @@
 
 body { background-color: #2F4F4F; darkslategray; }
-h1 { text-align: center; color: #778899; lightslategray; }
+h1 { text-align: center; color: #E0FFFF; lightcyan; }
+h2 { text-align: center; color: #778899; lightslategray; }
 hr { color:	#C0C0C0; silver; }
 i { color: #4682B4; steelblue; }
 b { color: #6495ED; cornflowerblue; }
