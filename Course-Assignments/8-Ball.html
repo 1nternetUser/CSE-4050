@@ -2,16 +2,16 @@
 <html>
 <body>
 
-
 <h2>8-Ball (Java Script Assignment)</h2>
 
-<p>Click on the 8-Ball to answer your life's greatest questions.</p>
+<p>Click the button below the 8-Ball to answer your life's greatest questions.</p>
 
 <p id="JavaScriptAssignment"></p>
-  
+
+//<script will be recognized as the Java Script language.
 <script>
   
-//The list of responses the 8-Ball will use to answer your question.
+//The array of responses the 8-Ball will use to answer your question.
 var myAnswers = 
 [ 
   "As I see it, yes.",
@@ -36,16 +36,18 @@ var myAnswers =
   "You may rely on it."
 ]; 
 
-//This randomly selects 8-Ball's answer from the array above.  
+//This selects an answer randomly from the array.
 var randomAnswer = myAnswers[Math.floor(Math.random()*myAnswers.length)];
-
-<button onclick="document.body.innerHTML = randomAnswer"><img id="8-Ball" src="8-Ball.png" style="width:100px"></button>
   
 </script>
+	
+<img src="8-Ball.png" alt="8-Ball picture" width="500" height="500">
+	
+//This is the button used to trigger the event.
+<button type="button"onclick="document.body.innerHTML = randomAnswer">Click Me!</button>
 
 <hr>
 		<a href="https://1nternetuser.github.io/CSE-4050/Progress-Reports/Progress-Report-3">This is the link to this week's progress report.</a>
-  
 </body>
 </html>
 
