@@ -7,16 +7,14 @@
 <p id="Data"></p>
 
 <script>
-  var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age":23, "City":"Beaumont"}'
+  var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age": 23, "City":"Beaumont"}'
   var obj = JSON.parse(txt);
   document.getElementById("Data").innerHTML = 
-                                              "Name: "  + obj.FirstName 
-                                                        + obj.MidName   
-                                                        + obj.LastName  +   ", " + <br>
-                                              "Age: " 
-                                                        + obj.Age       +   ", " + <br>
-                                              "City: "
-                                                        + obj.City;
+                                              "Name: "  + obj.FirstName + 	" "
+                                                        + obj.MidName   +	" "
+                                                        + obj.LastName  +   ", " + 
+                                              "Age: " 	+ obj.Age       +   ", " + 
+                                              "City: "	+ obj.City;
 </script>
 
 </body>
