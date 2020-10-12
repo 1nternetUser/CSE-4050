@@ -4,12 +4,17 @@
 
 <h1>JSON Coding</h1>
 
-<p id="JSON"></p>
+<p id="Data"></p>
 
 <script>
   var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age":23, "City":"Beaumont"}'
   var obj = JSON.parse(txt);
-  document.getElementById("demo").innerHTML = obj.FirstName + ", " + obj.MidName + ", " + obj.LastName + ", " + obj.Age + ", " + obj.City;
+  document.getElementById("Data").innerHTML = 
+                                              obj.FirstName +   ", "
+                                            + obj.MidName   +   ", " 
+                                            + obj.LastName  +   ", " 
+                                            + obj.Age       +   ", " 
+                                            + obj.City;
 </script>
 
 </body>
