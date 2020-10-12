@@ -3,11 +3,11 @@
 <body>
 
 <h1>JSON Coding</h1>
-<p> Below is a String written in JSON format: </p> 
+<p><u>Below is a String written in JSON format: </u></p> 
 <p id="Data"></p>
 
 <br>
-<table>
+
 <script>
   var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age": 23, "City":"Beaumont"}'
   var obj = JSON.parse(txt);
@@ -18,7 +18,17 @@
                                               "Age: " 	+ obj.Age       +   	", " + 
                                               "City: "	+ obj.City;
 </script>
-</table>
+<p><u>JSON Syntax is able to return JavaScript Notation, hence the name.</u></p> 
+<p id="Data(1)"></p>
+<script>
+var myObj, x, y, z;
+myObj = { Name: "Francys Cunanan", Age: 23, City: "Beaumont" };
+x = myObj.Name;
+y = myObj.Age;
+z = myObj.City;
+document.getElementById("Data(1)").innerHTML = x + "'s place is " + z + " (inside the code, var 'y' is left out intentionally).";
+</script>
+
 <hr>
 <details>
 	<summary>Click for more information about JSON</summary>
