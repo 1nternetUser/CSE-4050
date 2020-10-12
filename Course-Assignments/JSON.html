@@ -3,28 +3,31 @@
 <body>
 
 <h1>JSON Coding</h1>
-
-<p id="Data"></p>
 <p> Below is a String written in JSON format: </p> 
+<p id="Data"></p>
+
 <br>
+<table>
 <script>
   var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age": 23, "City":"Beaumont"}'
   var obj = JSON.parse(txt);
   document.getElementById("Data").innerHTML = 
                                               "Name: "  + obj.FirstName + 	" "
                                                         + obj.MidName   +	" "
-                                                        + obj.LastName  +   ", " + 
-                                              "Age: " 	+ obj.Age       +   ", " + 
+                                                        + obj.LastName  +   	", " + 
+                                              "Age: " 	+ obj.Age       +   	", " + 
                                               "City: "	+ obj.City;
 </script>
-  <hr>
+</table>
+<hr>
 <details>
 	<summary>Click for more information about JSON</summary>
-  	<a href="https://www.youtube.com/watch?v=7mj-p1Os6QA">What is JSON?</a>
-    	<b>JSON</b> stands for 	<br>
-    	<b><i>J</i></b>ava	<br>
-	<b><i>S</i></b>cript	<br>
-    	<b><i>O</i></b>bject	<br>
+  	<a href="https://www.youtube.com/watch?v=7mj-p1Os6QA">What is JSON? (video)</a>
+	<br>
+    	<b>JSON</b> stands for 
+    	<b><i>J</i></b>ava 
+		<b><i>S</i></b>cript 
+    	<b><i>O</i></b>bject 
     	<b><i>N</i></b>otation	<br>
 </details>
 </body>
