@@ -4,7 +4,7 @@
 
 <h1>JSON Coding</h1>
 
-<p><u>Below is a String written in JSON format.</u></p>
+<p><u>Below is a String written in JSON format: </u></p>
 <p id="Data"></p>
 <script>
   var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age": 23, "City":"Beaumont"}'
@@ -38,6 +38,23 @@ student["Year"] = 1997;
 document.getElementById("Data(2)").innerHTML = "Student " + student.ID + "'s birth year is " + student.Year + " (inside the code, student.Year has been modified).";
 </script>
 
+<p><u>You are able to add a for loop onto JSON and even change or delete the values within the loop.</u></p>
+<p id="Data(3)"></p>
+<script>
+var NASA, i, x = "";
+NASA = 
+{
+  "Example":"T-minus Ten Seconds to Lift Off!",
+  "Rocket":[ 10, 9, 8, 7, 6, "Five", 4, 3, 2, 1, 0, "Lift Off!" ]
+};
+NASA.Rocket[5] = 5;
+delete NASA.Rocket[10];
+for (i in NASA.Rocket) 
+{
+  x += NASA.Rocket[i] + "<br>";
+}
+document.getElementById("Data(3)").innerHTML = NASA.Example + "<br>" + x;
+</script>
 <hr>
 <details>
 	<summary>Click for more information about JSON</summary>
@@ -62,11 +79,11 @@ document.getElementById("Data(2)").innerHTML = "Student " + student.ID + "'s bir
 	<br>
 	Object (unordered list of various values i.e. name types).
 	<br><br>
-	Since this is relatively easy to read for both humans and computers, it can be used to transfer data onto servers, webs, or mobile applications. 
-	It costs very little memory in comparison to XML. 
-	Another thing to note is that -- from apparent understanding -- JSON format only benefits upon converting information, 
-	but it's not able to modify or add anything with HTML elements.
-	Basically, it's read-only.
+Since this is relatively easy to read for both humans and computers, it can be used to transfer data onto servers, webs, or mobile applications. 
+It costs very little memory in comparison to XML. 
+Another thing to note is that -- from apparent understanding -- JSON format only benefits upon converting information, 
+but it's not able to modify or add anything with HTML elements.
+Basically, it's read-only.
 </details>
 </body>
 </html>
