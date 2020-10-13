@@ -3,11 +3,9 @@
 <body>
 
 <h1>JSON Coding</h1>
-<p><u>Below is a String written in JSON format: </u></p> 
+
+<p><u>Below is a String written in JSON format: </u></p>
 <p id="Data"></p>
-
-<br>
-
 <script>
   var txt = '{"FirstName":"Francys", "MidName":"Keith", "LastName":"Cunanan", "Age": 23, "City":"Beaumont"}'
   var obj = JSON.parse(txt);
@@ -18,6 +16,7 @@
                                               "Age: " 	+ obj.Age       +   	", " + 
                                               "City: "	+ obj.City;
 </script>
+
 <p><u>JSON Syntax is able to return JavaScript Notation, hence the name.</u></p> 
 <p id="Data(1)"></p>
 <script>
@@ -27,6 +26,16 @@ x = myObj.Name;
 y = myObj.Age;
 z = myObj.City;
 document.getElementById("Data(1)").innerHTML = x + "'s place is " + z + " (inside the code, var 'y' is left out intentionally).";
+</script>
+
+<p><u>You are also able to modify the notations with JSON.</u></p> 
+<p id="Data(2)"></p>
+<script>
+var student;
+student = { ID: "005307350", Month: 6, Year: 6 };
+
+student["Year"] = 1997;
+document.getElementById("Data(2)").innerHTML = "Student " + student.ID + "'s birth year is " + student.Year + " (inside the code, student.Year has been modified).";
 </script>
 
 <hr>
@@ -55,6 +64,9 @@ document.getElementById("Data(1)").innerHTML = x + "'s place is " + z + " (insid
 	<br><br>
 Since this is relatively easy to read for both humans and computers, it can be used to transfer data onto servers, webs, or mobile applications. 
 It costs very little memory in comparison to XML. 
+Another thing to note is that -- from apparent understanding -- JSON format only benefits upon converting information, 
+but it's not able to modify or add anything with HTML elements.
+Basically, it's read-only.
 </details>
 </body>
 </html>
