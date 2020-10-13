@@ -48,7 +48,7 @@ var NASA, i, x = "";
 NASA = 
 {
   "Example":"T-minus Ten Seconds to Lift Off!",
-  "Rocket":[ 10, 9, 8, 7, 6, "Five", 4, 3, 2, 1, 0, "Lift Off! <img src="Rocket.png" alt="Rocket" width="128" height="128">" ]
+  "Rocket":[ 10, 9, 8, 7, 6, "Five", 4, 3, 2, 1, 0, "Lift Off!" ]
 };
 NASA.Rocket[5] = 5;
 delete NASA.Rocket[10];
@@ -56,7 +56,7 @@ for (i in NASA.Rocket)
 {
   x += NASA.Rocket[i] + "<br>";
 }
-document.getElementById("Data(3)").innerHTML = NASA.Example + "<br>" + x;
+document.getElementById("Data(3)").innerHTML = NASA.Example + "<br>" + x + "<img src="Rocket.png" alt="Rocket" width="128" height="128">";
 </script>
 <hr>
 <details>
