@@ -42,13 +42,13 @@ document.getElementById("Data(2)").innerHTML = "Student " + student.ID + "'s bir
 </script>
 
 <p><u>You are able to add a for loop onto JSON and even change or delete the values within the loop.</u></p>
-<p id="Data(3)"></p><img src="Rocket.png" alt="Rocket" width="128" height="128">
+<p id="Data(3)"></p>
 <script>
 var NASA, i, x = "";
 NASA = 
 {
   "Example":"T-minus Ten Seconds to Lift Off!",
-  "Rocket":[ 10, 9, 8, 7, 6, "Five", 4, 3, 2, 1, 0, "Lift Off!" ]
+  "Rocket":[ 10, 9, 8, 7, 6, "Five", 4, 3, 2, 1, 0, "Lift Off! <img src="Rocket.png" alt="Rocket" width="128" height="128">" ]
 };
 NASA.Rocket[5] = 5;
 delete NASA.Rocket[10];
