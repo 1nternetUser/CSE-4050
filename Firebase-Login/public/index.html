@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Firebase Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjectStyle.css">
+</head>
+  
+<body>
+    <h1>You are Logged in . . . </h1>
+    <style>
+        img 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <a href="https://csusb.edu">
+        <img src="csusb_logo.png" alt="CSUSB LOGO" style="center" width="583" height="231">
+    </a>
+    <br>
+    <br>
+    <hr>
+    <h2>Imperial Length to Metric Converter:</h2>
+    <p>Insert a value in the Feet field to convert the value into Meters:</p>
+
+    <p>
+        <label>Feet:</label>
+        <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <script>
+        function LengthConverter(valNum)
+        {
+        document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+        }
+    </script>
+    <br>
+    <br>
+    <h2>Imperial Weight to Metric Converter:</h2>
+    <p>Insert a value in the Pound field to convert the value into Kilograms:</p>
+
+    <p>
+        <label>Pounds:</label>
+        <input id="inputPounds" type="number" placeholder="Pounds" oninput="WeightConverter(this.value)" onchange="WeightConverter(this.value)">
+    </p>
+    <p>Kilograms: <span id="outputKilogram"></span></p>
+
+    <script>
+        function WeightConverter(valNum)
+        {
+        document.getElementById("outputKilogram").innerHTML=valNum/2.2046;
+        }
+    </script>
+    <br>
+    <br>
+    <h2>MPH to KMH Converter:</h2>
+    <p>Insert a value in the MPH field to convert the value into KMH:</p>
+
+    <p>
+        <label>MPH:</label>
+        <input id="inputMPH" type="number" placeholder="MPH" oninput="SpeedConverter(this.value)" onchange="SpeedConverter(this.value)">
+    </p>
+    <p>KMH: <span id="outputKMH"></span></p>
+
+    <script>
+        function SpeedConverter(valNum)
+        {
+        document.getElementById("outputKMH").innerHTML=valNum*1.609344;
+        }
+    </script>
+    <br>
+    <br>
+    <h2>Fahrenheit to Celsius Converter:</h2>
+    <p>Insert a value in the Fahrenheit field to convert the value into Celsius:</p>
+
+    <p>
+        <label>Fahrenheit:</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="TempConverter(this.value)" onchange="TempConverter(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+
+    <script>
+        function TempConverter(valNum)
+        {
+        document.getElementById("outputCelsius").innerHTML=(valNum-32)*5/9;
+        }
+    </script>
+    <br>
+    <br>
+    <h2>USD to Euros Converter:</h2>
+    <p>Insert a value in the USD field to convert the value into Euros:</p>
+
+    <p>
+        <label>USD:</label>
+        <input id="inputDollars" type="number" placeholder="Dollars" oninput="CurrencyConverter(this.value)" onchange="CurrencyConverter(this.value)">
+    </p>
+    <p>Euros: <span id="outputEuros"></span></p>
+
+    <script>
+        function CurrencyConverter(valNum)
+        {
+        document.getElementById("outputEuros").innerHTML=valNum*0.71;
+        }
+    </script>
+    <br>
+    <br>
+    <hr>
+    <h2>Reading Log and Summary:</h2>
+    <figure>
+        <nav>
+            <table>
+                <tr><th><b>Table of Contents:</b></th></tr>
+                <tr><td>Author:</td><td>Title</td></tr>
+                <tr><td>Sun Tzu:</td><td><a href="#ArtOfWar">The Art of War</a></td></tr>
+                <tr><td>Miyamoto Musashi:</td><td><a href="#BookOf5Rings">A Book of 5 Rings</a></td></tr>
+                <tr><td>Bram Stoker:</td><td><a href="#Dracula"> Dracula</a></td></tr>
+                <tr><td>Wu Cheng'en:</td><td><a href="#JourneyToTheW"> Journey to the West</a></td></tr>
+            </table>
+        </nav>
+    </figure>
+    <section id="ArtOfWar">
+        <dl>
+            <dt><b><u>Sun Tzu | Art of War: November 29, 2020</b></u></dt>
+            <dd>
+                <br><b>Chapter 1:</b> The Art of War is a matter of <i>Life and Death</i> to the State that must not be ignored.
+                <br>There are 5 factors to consider in one's army:
+                <br>(1)<i> &emsp; The Moral Law</i>, the law in which causes the people to be in complete accord with their ruler, so that they will follow him regardless of their lives, undismayed by any danger.
+                <br>(2)<i> &emsp; Heaven</i>, the importance of night and day, cold and heat, times and seasons.
+                <br>(3)<i> &emsp; Earth</i>, the comprise of distances, great and small; danger and security; open ground and narrow passes; the chances of life and death.
+                <br>(4)<i> &emsp; The Commander</i>, the virtues of wisdom, sincerely, benevolence, courage and strictness.
+                <br>(5)<i> &emsp; Method and Discipline</i>, the marshaling of the army in its proper subdivisions, the graduations of rank among the officers, the maintenance of roads by which supplies may reach the army, and the control of military expenditure.
+                <br>
+                <br>When seeking to determine the military conditions, let them be made the basis of a comparison, in this wise:—
+                <br>(1) &emsp; Which of the two sovereigns is imbued with the <i>Moral law</i>?
+                <br>(2) &emsp; Which of the two generals has most ability?
+                <br>(3) &emsp; With whom lie the advantages derived from <i>Heaven</i> and <i>Earth</i>?
+                <br>(4) &emsp; On which side is <i>Discipline</i> most rigorously enforced?
+                <br>(5) &emsp; Which army is stronger?
+                <br>(6) &emsp; On which side are officers and men more highly trained?
+                <br>(7) &emsp; In which army is there the greater constancy both in reward and punishment?
+                <br>
+                <br> &emsp; Take advantage to any helpful circumstances over and beyond the ordinary rules;
+                <br>Depending whether the situations are favorable, one should modify one’s plans if things don't go as it should.
+                <br>All warfare is based on deception; hence, when able to attack, we must seem unable to; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near. Hold out baits to entice the enemy. Feign disorder, and crush him.
+                <br>If he is secure at all points, be prepared for him. If he is in superior strength, evade him. If your opponent is easy to anger, seek to irritate him. Pretend to be weak, that he may grow arrogant. If he is taking his ease, give him no rest. If his forces are united, separate them. Attack him where he is unprepared, appear where you are not expected. These military devices, leading to victory, must not be known to the enemy beforehand.
+                <br>Now the general who wins a battle makes many calculations in his temple ere the battle is fought. The general who loses a battle makes but few calculations beforehand. Thus do many calculations lead to victory, and few calculations to defeat: how much more no calculation at all! It is by attention to this point that I can foresee who is likely to win or lose.
+            </dd>
+            <dd>
+                <br><b>Chapter 2:</b> In the operations of war where your enemy can possess many soldiers and firepower, so will the cost in raising these soldiers.
+                <br> &emsp; When engaging in a fight, if a victory is long in coming, then your men’s weapons will grow dull and their spirits will weaken.
+                If you lay siege to a town, you will exhaust your strength and resources. Again, if the campaign is prolonged, the resources won't be able to pay for its strains; you will lose more than what you're fighting for.
+                If your weapons are dulled, your spirits are low, your strength is exhausted and your treasure is spent, other chieftains will take advantage of your limits. From there, no man however skilled or wise, will be able to avoid the consequences that's about to come.
+                <br> &emsp; We are well aware of 'stupid haste' in wars, yet long delays is never thought of cleverness. There's no country that benefits from a prolonged war. The only exception are those well acquainted with the evils of war that can only understand the profitable ways of carrying it on.
+                The skillful soldier does not raise reinforcements, neither are his supplies loaded more than twice as needed. Instead bring your war material from home, but forage on the enemy so the army will have food enough for its needs.
+                The Poverty of the State exchequer (system that manages its resources) maintains an army by contributions from a distance. Contributing to maintain an army at a distance causes the people to be poor. On the other hand, the proximity of an army causes prices to go up, making peasants rich and draining the people's substance away.
+                With this loss of substance and exhaustion of strength, the homes of the people will be stripped bare, and three-tenths of their income will be dissipated while the government expenses will amount to four-tenths of its total revenue.
+                Hence, a wise general makes a point of foraging on the enemy. One cartload of the enemy’s provisions is worth twenty times his own.
+                Now in order to kill the enemy our men must be roused to anger. There must be something to gain when defeating the enemy; you must have their rewards.
+                Therefore in chariot fighting, when ten or more chariots have been taken, those should be rewarded who took the first. Our own flags should be substituted for those of the enemy, and the chariots mixed and used in conjunction with ours. The captured soldiers should be kindly treated and kept.
+                This is called, using the conquered foe to augment one’s own strength. In war, then, let your great object be victory, not lengthy campaigns.
+                Thus it may be known that the leader of armies is the arbiter of the people’s fate, the man on whom it depends whether the nation shall be in peace or in peril.
+            </dd>
+            <dd>
+                <br><b>Chapter 3:</b> In the practical <i>Art of War</i>, it is better to take your enemy's country whole and intact rather than shattered and destroyed. In addition, it is better to capture than destroy. To fight and conquer in all of your battles is not <i>supreme excellence</i>; <i>supreme excellence</i> is breaking the enemy's resistance without fighting.
+                In generalship, you must prioritize by stopping the enemy’s plans first; next is prevent the connection of the enemy’s forces; afterwards you attack the enemy’s army in the field. Your lowest option is to besiege walled cities.
+                If it's possible to avoid, you must not besiege it for it requires months of preparation time.
+                <br>The general unable to control his anger will get his men killed while the town is left uncaptured. Thus, a skillful leader subdues the enemy without fighting. This is known as the <i>Stratagem</i> method.
+                <br>This is the rule in war:<br>
+                <br>If your forces are 10 on 1, then you surround them
+                <br>If 5 on 1, then you attack him
+                <br>If 2 on 1, you divide the army into two
+                <br>If 1 on 1, you offer battle
+                <br>If you have slightly less numbers than your enemy, then you must evade from them;
+                <br>If you have significantly less numbers than your enemy, you must run from the enemy.
+                <br>Although a fight may be made by a smaller force, in the end it needs to be captured by the larger force.<br>
+                <br>The general is the wall to the State; if he is complete in securing all points then he is strong, but if he's defective then he is weak.
+                There are three ways a ruler can bring misfortune on his army:<br>
+                <br><i>Hobbling an army</i>, the ignorance that your army is unable to follow your orders.
+                <br>The refusal to adapt and lead your army in a different way that is better suited for them.
+                <br>Employing officers that aren't able to handle specific situations.<br>
+                <br>If the leader has done all three, his soldiers will rebel into anarchy ruining your chance to victory.
+                <br>There are 5 essential conditions for victory:<br>
+                <br>Know when to fight and when to leave.
+                <br>Know how to handle superior and inferior forces.
+                <br>If your army has boosted morale throughout all their ranks.
+                <br>Stays prepared and strikes when the enemy isn't.
+                <br>If your army isn't corrupted to anarchy.<br>
+                <br>If you know the enemy and yourself, then you will not fear the result of a hundred battles.
+                <br>If you know yourself but not the enemy, for every victory you will also suffer a defeat.
+                <br>If you neither know yourself nor the enemy, then you will lose in every battle.
+            </dd>
+            <dd>
+                <br><b>Chapter 4:</b> Good soldiers stray away from the possibility of defeat and wait for an opportunity to fight.
+                <br>To secure yourself from defeat is entirely on your hands as well as the enemy's. One who knows how to avoid defeat is powerful on defense, but one who knows how to defeat the enemy is powerful on offense.
+                The general who is skilled in defense hides in secrecy (Viet Cong); he who is skilled in attack flashes forth from the topmost heights of heaven (USA).
+                <br>In war, the <i>Acme of Excellence</i> is succeeding without mistakes; to make your defeat impossible and take every chance on defeating the enemy.
+            </dd>
+            <dd>
+                <br><b>Chapter 5:</b> ...
+            </dd>
+        </dl>
+        <hr>
+        <section id="BookOf5Rings">
+            <dl>
+                <dt><b>Miyamoto Musashi | A Book of 5 Rings: January ##, 2021</b></dt>
+                <dd>Filler </dd>
+            </dl>
+            <hr>
+            <section id="Dracula">
+                <dl>
+                    <dt><b>Bram Stoker | Dracula: February ##, 2021</b></dt>
+                    <dd>Filler </dd>
+                </dl>
+                <hr>
+                <section id="JourneyToTheW">
+                    <dl>
+                        <dt><b>Wu Cheng'en | Journey to the West: March ##, 2021</b></dt>
+                        <dd>Filler </dd>
+                    </dl>
+                    <hr>
+                    <br>
+                    <br>
+                    <a href="https://1nternetuser.github.io/CSE-4050/Progress-Reports/Progress-Report-6.html">This is the link for the Previous Progress Report (Number 6)</a>
+                    <br>
+                    <a href="https://1nternetuser.github.io/CSE-4050/Progress-Reports/Progress-Report-8.html">This is the link for the Current Progress Report (Number 8)</a>
+                    <br>
+                    <br>
+                    <button onclick="mainApp.logOut()">Log Out</button>
+                    <script src="fireBase.js"></script>
+                    <script src="main.js"></script>
+</body>
+</html>
